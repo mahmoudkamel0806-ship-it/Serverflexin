@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/movies/*"
+  to = "/.netlify/functions/stream-movie/:splat"
+  status = 200
